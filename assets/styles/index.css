@@ -1,4 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@400;600;700&family=Open+Sans&family=Roboto&family=Roboto+Slab:wght@300&display=swap");
+body {
+  border-radius: 10px;
+  background: #FFF;
+  border-radius: 10px;
+  max-width: 1440px;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 90px 74px 0px 76px;
+  max-width: 1260px;
+}
+.header .header__logo {
+  width: 201px;
+  height: 40px;
+  top: 90px;
+  left: 76px;
+  padding: 0px 0.39px 0px 0px;
+}
 .header .button {
   display: flex;
   align-items: center;
@@ -59,7 +81,6 @@
 }
 .main .main__info .footer__nav a {
   text-decoration: none;
-  color: #5222D0;
   font-family: Roboto Slab;
   font-size: 20px;
   font-style: normal;
@@ -67,27 +88,6 @@
   line-height: 160%;
 }
 
-body {
-  border-radius: 10px;
-  background: #FFF;
-  border-radius: 10px;
-  max-width: 1440px;
-}
-
-.header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  margin: 90px 74px 0px 76px;
-}
-.header .header__logo {
-  width: 201px;
-  height: 40px;
-  top: 90px;
-  left: 76px;
-  padding: 0px 0.39px 0px 0px;
-}
 .main {
   display: flex;
 }

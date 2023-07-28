@@ -1,0 +1,65 @@
+@import './vars';
+@import './template';
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@400;600;700&family=Open+Sans&family=Roboto&family=Roboto+Slab:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    /* Все элементы на странице будут иметь ту ширину, которую указали (вклбчая в себя рамки, паддинги и внутренние отступы  */
+}
+
+body {
+    @extend %body;
+}
+
+.header {
+    @extend %header;
+}
+
+.main {
+    margin: 0px 76px 0px 76px;
+
+    .main__title {
+        color: var(--unnamed, #000);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+        margin-left: 30px;
+    }
+
+    .main__box {
+        @extend %main__box;
+    }
+
+    .row__news {
+        background-color: var(--unnamed, #EC615B);
+        color: #ffffff;
+
+        .form--mail {
+            width: 323px;
+            height: 50px;
+            flex-shrink: 0;
+            color: var(--unnamed, #000);
+            font-family: Roboto Slab;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 160%;
+            padding-left: 9px;
+        }
+
+        .button {
+            @extend %btn;
+            width: 135px;
+            height: 38px;
+        }
+    }
+
+    .footer__nav {
+        @extend %footer__nav;
+        width: 40%;
+        padding: 20px 0px 0px 30px;
+    }
+
+}
